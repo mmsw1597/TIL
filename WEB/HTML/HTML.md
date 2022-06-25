@@ -19,7 +19,7 @@ paragraph 태그이며 단락을 의미한다. 각 단락은 단락마다 줄띄
 + a <br>
 anchor 태그이다. p태그의 자식이며 다른 웹사이트로의 링크를 나타낼때 활용된다.
 ```html
-<a href="httpsL//...">Link</a>
+<a href="https//...">Link</a>
 ```
 + li <br>
 list 태그이다. unordered list, ordered list 태그의 자식이며 리스트 내 각 항목을 의미한다.

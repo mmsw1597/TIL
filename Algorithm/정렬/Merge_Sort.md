@@ -13,7 +13,7 @@ function merge_sort(){
 }
 ```
 실제 코드는 다음과 같다.
-```
+```c
 #include <iostream>
 #include <vector>
 

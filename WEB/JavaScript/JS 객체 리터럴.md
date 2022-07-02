@@ -85,7 +85,7 @@ const obj = {
   [`${prefix}-${++i}`]: i
 };
 ```
-*메서드 축약 표현
+* 메서드 축약 표현
 ES6에서는 function키워드를 생략가능하다.
 ```java
 const obj = {

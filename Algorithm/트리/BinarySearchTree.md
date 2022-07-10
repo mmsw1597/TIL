@@ -7,14 +7,16 @@
 ### 탐색
 BST에서 x값을 탐색한다고 가정하자. 루트에서 부터 시작하여 현재 노드가 x보다 크면 왼쪽으로, 작으면 오른쪽으로 이동하면 된다. 만약 x가 트리에 없다면 null 위치로 이동하게 된다.
 ```c
-function bst_search(x)
-  set node = bst.root
-  while(node != null && node.value != x)
+function bst_search(x){
+  set node = bst.root;
+  while(node != null && node.value != x){
     if(node.value > x)
-      node = node.left
+      node = node.left;
     else
-      node = node.right
-  return node
+      node = node.right;
+  }
+  return node;
+}
 ```
 ### 삽입
 탐색 과정과 유사하게 null에 도달할 때 까지 계속 x를 아래로 이동시키며 null에 도달하면 그자리에 노드를 삽입한다. 이동하면서 지점의 부모 노드를 기억해야 하며

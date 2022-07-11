@@ -33,7 +33,7 @@ let, const 키워드로 선언한 변수는 전역 객체의 프로퍼티가 아
 전달받은 문자열을 실수 타입으로 변환하는 함수
 + parseInt <br>
 전달받은 문자열을 정수 타입으로 변환하는 함수, 이때 두번째 인수로 진수를 나타내는 기수를 전달할 수 있다.
-+ encodeURI/ decodeURI
++ encodeURI/ decodeURI <br>
 URI를 전달받고 이스케이프 처리를 위해 인코딩 하는 함수 또는 디코딩하는 함수
-+ encodeURIComponent/ decodeURIComponent
++ encodeURIComponent/ decodeURIComponent <br>
 URI 구성요소를 인수로 전달받아 인코딩/ 디코딩한다. (예를들어 쿼리 스트링)

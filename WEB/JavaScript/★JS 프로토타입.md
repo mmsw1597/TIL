@@ -58,7 +58,7 @@ me -> Person.prototype -> Object.prototype 순으로 프로퍼티를 탐색한�
 
 ### 프로토타입 교체
 + 생성자 함수로 교체하기
-생성자 함수로 교체한 prototype에는 더이상 constructor가 존재하지 않게 된다. 위 예제에서는 객체 리터럴로 할당했기 때문에 Object.protytype의 constructor를
+생성자 함수로 교체한 prototype에는 더이상 constructor가 존재하지 않게 된다. 위 예제에서는 객체 리터럴로 할당했기 때문에 Object.prototype의 constructor를
 상속받게 된다. 따라서 constructor를 추가하여 연결을 유지해야 한다.
 + 인스턴스에 의한 프로토타입 교체
 Object.setPrototypeOf(instance, prototype) 메서드를 이용하여 교체할 수 있다. 마찬가지로 constructor는 존재하지 않게 되고 Object.prototype의 constructor를 상속받는다.

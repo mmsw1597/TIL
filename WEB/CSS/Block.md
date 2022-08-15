@@ -20,3 +20,10 @@ box의 경계를 의미. 두께, 스타일, 색깔 같은 속성을 부여가능
 ### inline
 margin, padding, border를 갖기는 하나 margin의 경우 상하 margin은 가질 수 없음.
 
+### inline-block
+block의 display 속성을 inline-block으로 바꾸면, 높이와 너비를 가질 수 있게 되고, inline 요소처럼 옆에 다른 요소가 올 수 있다.
+하지만 반응형 디자인을 지원하지 않기 때문에 사용을 지양하자.
+
+
+
+

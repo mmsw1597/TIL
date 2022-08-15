@@ -18,5 +18,5 @@ box의 border(경계)로부터 안쪽에 있는 공간을 의미.
 box의 경계를 의미. 두께, 스타일, 색깔 같은 속성을 부여가능. 스타일은 보통 solid 하나만 씀.
 
 ### inline
-inline 요소도 border를 가질 수 있음.
+margin, padding, border를 갖기는 하나 margin의 경우 상하 margin은 가질 수 없음.
 

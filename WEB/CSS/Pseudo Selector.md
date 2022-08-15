@@ -22,6 +22,15 @@
 ### 어트리뷰트 값 포함으로 선택하기
 예를들어 input 태그에 placeholder ="...name" 같이 name을 포함하는 값이 있다면 input[placeholder~="name"]으로 태그들을 선택가능
 
+### ::placeholder
+placeholder의 스타일을 변경시킬려면 콜론을 두 개 붙여서 스타일을 적용하면 된다.
+
+### ::selection
+어떤 텍스트를 드래그 했을 때 스타일을 변경시키려면 ::selection을 사용하면 된다.
+
+### ::first-letter
+첫번째 글자를 강조하는 문법.
+
 
 
 

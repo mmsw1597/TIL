@@ -21,7 +21,8 @@ justify-content와 유사. 기본적으로 교차축에 적용됨.
 column, row 속성을 가질 수 있음. 기본은 row임. 주축의 방향을 의미함.
 
 ### flex-wrap
-nowrap, wrap 속성을 가질 수 있음. 기본은 nowrap. 화면 사이즈를 줄였을때 너비 값을 유지하느냐(wrap) 유지하지 않느냐(nowrap)의 차이.
+nowrap, wrap 속성을 가질 수 있음. 기본은 nowrap. 화면 사이즈를 줄였을때 부여했던 너비 값을 유지하느냐(wrap) 유지하지 않느냐(nowrap)의 차이. 기본적으로 flex-box는 요소를
+라인 하나에 모두 넣기 때문.
 
 ### position : fixed
 스크롤을 계속 내리거나 화면을 움직여도 특정 자리에 요소가 고정됨. 고정되는 위치는 맨 처음에 요소가 위치한 자리.
@@ -33,5 +34,22 @@ nowrap, wrap 속성을 가질 수 있음. 기본은 nowrap. 화면 사이즈를 
 ### position: absolute
 가장 가까운 relative한 부모를 기준으로 위치를 변경함. 최종단은 body
 
+### align-self
+직접 자식에게 부여하는 속성 중 하나. align-items와 비슷하지만 특정 하나의 자식에게만 적용한다.
 
+### order
+직접 자식에게 부여되는 속성. default order는 0이다. order의 오름차순으로 요소가 정렬된다. HTML 문서의 변경없이 요소의 순서를 바꿀 수 있다. 
 
+### align-content
+교차축의 line 정렬 방법을 변경할 때 사용.
+
+### flex-shrink
+기본적으로 nowrap에서 작동하고 default 값은 1인데 만약 2를 부여한다면 화면이 줄어들 때 
+요소의 너비값은 flex-shrink가 1인 요소에 비해 flex-shrink가 2인 요소가 2배로 너비가 줄어든다.
+
+### flex-grow
+flex-shrink의 반대개념. default 값은 0이고 1이 될 경우 차지할 수 있는 여분의 공간을 모두 차지하여 요소가 커진다.
+부여되는 값에 따라 여분의 공간을 값에 비례하여 나눠가진다.
+
+### flex-basis
+child에 적용되는 속성. main-axis가 가로면 width, 세로면 height를 의미하게됨. flex-shrink나 flex-grow 에 의해 변형되기전 사이즈를 의미한다.  

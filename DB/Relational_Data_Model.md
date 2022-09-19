@@ -62,4 +62,52 @@
 3. key는 superkey임 그러나 역은 성립하지 않음.
 4. key를 포함하는 attribute의 집합은 반드시 superkey임
 5. relation이 candidate key를 여러개 가지면 그중 임의로 하나를 대표해서 정하면 그것을 primary key라고 부르고 보통 밑줄을 쳐서 표현함.
+6. key의 경우 하나의 tuple에서 다른 tuple을 참조할때 쓰임.
+
+## Relational Database Schema
+같은 DB내에 relation schema를 모두 모은 집합 S
+
+## Relational Database State
+1. state는 일단 실제 data 자체로 보면 됨.
+2. r의 집합이라고 보고 이때 r은 schema R의 state. 그리고 각 r은 IC(제약조건)을 만족해야함.
+3. Basic operation에 의해 state는 바뀔 수 있다.
+
+## Entity Integrity
+1. primary key인 PK는 절대 null이 되어선 안된다.
+2. t[PK] != null
+3. PK가 여러개의 attribute를 가진다면 그 attribute의 값중 어느 하나라도 null이어선 안된다.
+
+## Referential Integrity
+1. 하나의 relationship 내에 두 tuple은 referencing relation을 갖거나 referenced relation을 가짐.
+2. PK를 참조하는 attribute를 FK(foreign key) 라고 부른다.
+3. 이때 t1[FK] == t2[PK] 여야 한다.
+4. FK는 PK와 같은 값을 갖거나 null이어야 한다. 이때 null이라면 FK는 PK의 일부여서는 안됨.
+
+## Relation 내의 Operation
+1. IC는 operation에 의해 위반될 수 있다.
+2. 어느 하나의 schema내의 operaion으로 인해 다른 schema까지 영향을 끼칠 수 있으므로 조치가 필요할 수 있다.
+
+## IC를 위반하는 Operation에 대한 조치
+1. IC를 위반한다면 그 operation을 거부할 수 있다.
+2. 일단 operation을 수행하고 유저에게 위반 사실을 알린다.
+3. operation을 수행하고 영향이 가는 곳도 update를 해준다. (cascade or set null or set default)
+4. 유저가 정의한 error-correction routine을 수행한다.
+
+## INSERT
+1. domain 제약조건 위반 가능.
+2. key 제약조건 위반 가능.
+3. entity 제약조건 위반 가능.
+4. referential 제약조건 위반 가능.
+
+## DELETE
+1. 오로지 referential 제약조건만 위반가능.
+
+## UPDATE
+1. 값을 수정할때 해당 값을 삭제하고 삽입하는 것도 포함하기 때문에 INSERT와 같이 모든 제약조건을 위반할 수 있다.
+2. PK를 수정한다면 모든 제약조건을 위반가능하다. PK를 수정하는 일은 절대 없도록 하자.
+3. FK를 수정한다면 referential 제약조건을 위반할 수 있다.
+4. FK, PK도 아닌 값을 수정한다면 domain constraints를 위반할 수 있다.
+
+
+
 

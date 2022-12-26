@@ -148,7 +148,9 @@ true false 외에도 문자열을 반환할 수도 있는데 이는 에러로 �
 
 동시에 여러 검증을 거치게 하고 싶으면 위와 같이 객체를 넘기도록 작성. 키 값은 아무거나 상관없다.
 
+![image](https://user-images.githubusercontent.com/55936770/209578040-4aace15c-e583-4ddc-880e-c4688551eee3.png)
 
+참고로 setValue도 useForm이 제공하는데, input 창의 값을 설정하는데에 사용된다. 예를들어 submit을 했을때 input 창을 비워주는 용도로 사용가능하다.
 
 
 
